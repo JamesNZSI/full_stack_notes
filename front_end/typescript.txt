@@ -1,1 +1,19 @@
+1.main idea
+  typescript: javascript with data type
+  it will check the data types and alert you while coding.
+  typescript will compile a .ts file and generate a .js file containing the code converted into raw javascript
+2. grammar
+  2.1 use : number after variable to indicate the data type
+  let n : number = 1
+  2.2 use : number[] indicate a list of number, use : Array indicate a list of number as well
+  let numbers : number[] = [1, 2, 3]
+  let numbers : Array = [1, 2, 3]
+  2.3 use : (number | null) for combined data type
+  let n : (number|null) = null
+  n = 1
+  2.4 type alias
+  type NewType = string | number
+  let number_string : NewType = 123
+  let number_strings : NewType [] = [123, '11', '22', 456]
+
 
