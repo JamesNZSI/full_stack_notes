@@ -15,5 +15,19 @@
   type NewType = string | number
   let number_string : NewType = 123
   let number_strings : NewType [] = [123, '11', '22', 456]
+3. function 
+  3.1 could be without explicit return data type, the compiler will it
+function fn(n:number, b:string):string{
+  return number+string
+}
+  3.2 declare function
+const fn = function fn(n:number, b:string):string{
+  return number+string
+}
+  3.3 arrow function
+const arr = (n:number, b:string):string => {
+  return number+string
+}
+
 
 
