@@ -32,9 +32,9 @@
   ```
   ## 3.2 declare function
   ```Typescript
-const fn = function fn(n:number, b:string):string{
-  return number+string
-}
+  const fn = function fn(n:number, b:string):string{
+    return number+string
+  }
   ```
   ## 3.3 arrow function
   ```Typescript
@@ -81,6 +81,8 @@ type ObjType = {
   age:number,
   gender:string,
   action:(move:string) => string
+  // another way to define function type
+  exist(place:string):void
 }
 // create an instance of ObjType
 let obj:ObjType = {
@@ -91,4 +93,25 @@ let obj:ObjType = {
     console.log('take an action of ' + move)
   }
 }
+```
+## 4.1 Optional property in an object, use ? to indicate a property is optional
+```Typescript
+type ObjType = {
+  name:string,
+  age?:number,
+  gender:string,
+  action?:(move:string) => string
+}
+// create an instance of ObjType without age property
+let obj:ObjType = {
+  name:'Indiana',
+  age:70
+  gender:'Male'
+}
+// invoke optional function
+obj.action && obj.action('run')
+obj.age && obj.age.toString()
+//optional chaining, works on any may not exist property
+obj.age?.toString()
+obj.action?.()
 ```
