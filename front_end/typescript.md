@@ -115,3 +115,41 @@ obj.age && obj.age.toString()
 obj.age?.toString()
 obj.action?.()
 ```
+# 5. Interface
+define the structure(the restriction of properties) of a type of objects, similar to the Interface in Java.
+```Typescript
+interface IPerson = {
+  name:string
+  height:number
+}
+// only have the properties in the interface
+const person: IPerson = {
+  name:'Indi',
+  height:190
+}
+```
+## 5.1 interface extend
+```Typescript
+interface IStudent extends IPerson = {
+  profession:string
+}
+const s: IStudent = {
+  name:'Indiana',
+  height:190,
+  profession:'student'
+}
+//use type to implement similar function as interface extend
+//use & symbol, the difference between | and & is easy to understand
+type TPerson = {
+  name:string
+  height:number
+}
+type TStudent = {
+  profession:string
+} & TPerson
+const st: TStudent = {
+  name:'Indiana',
+  height:190,
+  profession:'student'
+}
+```
