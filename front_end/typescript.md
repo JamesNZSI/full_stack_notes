@@ -153,3 +153,7 @@ const st: TStudent = {
   profession:'student'
 }
 ```
+# 6 tuple constrain array length and item types
+```Typescript
+let arr: [number, string] = [190, 'Indi']
+```
