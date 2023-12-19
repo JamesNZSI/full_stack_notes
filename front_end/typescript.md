@@ -153,7 +153,13 @@ const st: TStudent = {
   profession:'student'
 }
 ```
-# 6 tuple constrain array length and item types
+# 6 tuple 
+constrain array length and item types
 ```Typescript
 let arr: [number, string] = [190, 'Indi']
+```
+# 7 Object literal
+can be used to represent enumerate type
+```Typescript
+type gender: 'Male' | 'Female'
 ```
