@@ -161,5 +161,32 @@ let arr: [number, string] = [190, 'Indi']
 # 7 Object literal
 can be used to represent enumerate type
 ```Typescript
-type gender: 'Male' | 'Female'
+type Gender = 'Male' | 'Female'
+```
+# 8 Enumerate
+use object literal is more common
+```Typescript
+//use indices 0, 1... to represent the item value
+enum Gender{
+  Male,
+  Female
+}
+function hairStyle(gender: Gender){
+  console.log(gender + ' hair styles')
+}
+
+hairStyle(Gender.Male)
+```
+```Typescript
+//use specified values, the implicit value will be one plus the previous one
+enum Gender{
+  Male = 1,
+  // will be the same as Female = 2
+  Female
+}
+// or
+enum Gender{
+  Male = 'male',
+  Female = 'female'
+}
 ```
