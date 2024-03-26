@@ -190,3 +190,15 @@ enum Gender{
   Female = 'female'
 }
 ```
+# 9 Type any
+```Typescript
+//default type of a variable, will not have any recommended method for the variable
+let var : any = []
+```
+# 10 Type Assertion as
+key word 'as' can convert a variable into a specific data type
+```Typescript
+const a = document.getElementById('box') as HTMLDivElement
+//can check the exact data type by creating an object
+const div = document.createElement('div')
+```
