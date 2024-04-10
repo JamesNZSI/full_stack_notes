@@ -202,3 +202,39 @@ const a = document.getElementById('box') as HTMLDivElement
 //can check the exact data type by creating an object
 const div = document.createElement('div')
 ```
+# 11 Generics
+similar to generics in other languages, a generic type is involved in a function, making the function compatible with multiple types
+```Typescript
+# define
+function getId<T>(val: T){
+  return val
+}
+# invoke
+const r = getId<number>(1234)
+# or using type argument inference
+const r1 = getId(1234)
+```
+# 11.1 Generic Constraints
+```Typescript
+interface Lengthwise {
+  length: number;
+}
+function loggingIdentity<Type extends Lengthwise>(arg: Type): Type {
+  console.log(arg.length); // Now we know it has a .length property, so no more error
+  return arg;
+}
+# invoke
+loggingIdentity({ length: 10, value: 3 });
+```
+# 11.2 Keyword keyof
+it means the type is one of the properties of the type
+```Typescript
+function getProperty<Type, Key extends keyof Type>(obj: Type, key: Key) {
+  return obj[key];
+}
+ 
+let x = { a: 1, b: 2, c: 3, d: 4 };
+# invoke
+getProperty(x, "a");
+getProperty(x, "m");
+```
