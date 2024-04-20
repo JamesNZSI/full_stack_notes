@@ -14,6 +14,7 @@
 const impJs = require('./file.js')
   ```
   ## 2.2 ECMAScript
+  Need to add {'type':'module'} into file package.json
   ```Javascript
     const var = 123
     const fun = (a, b) => {
