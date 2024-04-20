@@ -25,4 +25,7 @@ const impJs = require('./file.js')
       expFun: fun
     }
     import impJs from './file.js'
+    // or export and import as needed, use the same variable name
+    export const expVar = 123
+    import {expVar} from './file.js'
   ```
