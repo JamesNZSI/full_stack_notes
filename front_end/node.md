@@ -72,3 +72,8 @@
       res.send('Hello world')
     })
   ```
+# 6 Access to static resources in Express package
+  ```Javascript
+    //access to static resources in public folder
+    server.use(express.static('./public'))
+  ```
