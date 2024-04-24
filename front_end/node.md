@@ -56,3 +56,19 @@
       res.send('Not exist')
     })
   ```
+# 5 CORS
+  install cors package
+  ```Shell
+    npm i cors
+  ```
+  use cors
+  ```Javascript
+    const express = require('express')
+    const cors = require('cors')
+    const server = express()
+    server.use(cors())
+    //request for root address
+    server.get('/', (req, res)=>{
+      res.send('Hello world')
+    })
+  ```
