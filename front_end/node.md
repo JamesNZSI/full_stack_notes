@@ -15,7 +15,7 @@
     const impJs = require('./file.js')
   ```
   ## 2.2 ECMAScript
-  Need to add {'type':'module'} into file package.json
+  Need to add {'type':'module'} into file package.json  \
   a live-binding
   ```Javascript
     const var = 123
