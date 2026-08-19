@@ -39,7 +39,7 @@
     npm i package_name
     //delete a package
     npm uni package_name
-    //add all dependent packages
+    //add all dependencies you need in package.json
     npm I
     //install global package -g
     npm i nodemon -g
