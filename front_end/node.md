@@ -3,7 +3,8 @@
 # 2. Modularization
   ## 2.0 .env
   modify start command in package.json 
-  ```"scripts": {
+  ```
+  "scripts": {
     "start": "nodemon --env-file=.env server2.js"
   }
   ```
