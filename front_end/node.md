@@ -1,6 +1,17 @@
 # Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 # 1. modules: fs, path, querystring, http
 # 2. Modularization
+  ## 2.0 .env
+  modify start command in package.json 
+  ```"scripts": {
+    "start": "nodemon --env-file=.env server2.js"
+  }
+  ```
+  create .env file with content such as
+  ```
+  PORT=8000
+  ```
+  
   ## 2.1 CommonJS
   a copy of value
   ```Javascript
